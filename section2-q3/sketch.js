@@ -42,7 +42,7 @@ function drawArcs(c1, c2, r) {
     let start = TWO_PI / 20 * i;//TWO_PIは2π
     let stop = TWO_PI / 20 * (i + 1);//それぞれの円弧の開始角度と終了角度を計算
     fill(i % 2 == 0 ? c1 : c2);
-    arc(cx, cy, r, r, start, stop, PIE);
+    arc(cx, cy, r, r, start, stop, PIE);//(中心座標,,円弧の幅と高さ,,円弧の開始角度と終了角度,,円弧の描画モード)
   }
 }
 
