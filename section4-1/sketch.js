@@ -53,15 +53,15 @@ function setup(){
     // BLANK[4] ヒント: 条件分岐を使って色を変更します
    
     if(scores[i]===largest){
-      fill(255,0,0);
+      fill(255,0,0);//最大値を赤色
     } else if(scores[i]=== smallest){
-      fill(0,0,255)
+      fill(0,0,255)//最小値が青色
     }
     else{
-      fill(122)
+      fill(122)//それ以外が灰色
     }
-    rect(i * dx + 2, height - h, dx - 4, h);
-    fill(0);
+    rect(i * dx + 2, height - h, dx - 4, h);//棒グラフの描写
+    fill(0);//文字の色を黒に
     text(scores[i].toPrecision(3), i * dx, height - h);
   }
 
